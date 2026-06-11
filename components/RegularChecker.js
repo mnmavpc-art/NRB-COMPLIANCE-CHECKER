@@ -108,13 +108,13 @@ export default function RegularChecker() {
       <div className={styles.grid2}>
         <Select label="Passport PIN vs NID" id="ri-pin" value={form.pin} onChange={set('pin')}>
           <option value="">Select</option>
-          <option value="matched">Matched ✓</option>
+          <option value="matched">Matched</option>
           <option value="mismatch">Mismatch — not acceptable</option>
           <option value="bc">Birth certificate basis (verify online)</option>
         </Select>
         <Select label="Employment verification" id="ri-evoe" value={form.evoe} onChange={set('evoe')}>
           <option value="">Select</option>
-          <option value="email">Email via official employer domain ✓</option>
+          <option value="email">Email via official employer domain</option>
           <option value="photo">Photo at office / workspace</option>
           <option value="self_photo">Self-employed: photo + trade license + tax return</option>
           <option value="none">Not done</option>
@@ -125,7 +125,7 @@ export default function RegularChecker() {
       <div className={styles.grid2}>
         <Select label="Remittance slips" id="ri-slips" value={form.slips} onChange={set('slips')}>
           <option value="">Select</option>
-          <option value="ok">Available with sender/receiver details ✓</option>
+          <option value="ok">Available with sender/receiver details</option>
           <option value="partial">Available but incomplete</option>
           <option value="na">Not available</option>
         </Select>
@@ -141,15 +141,15 @@ export default function RegularChecker() {
       <div className={styles.grid2}>
         <Select label="Security mode" id="ri-security" value={form.security} onChange={set('security')}>
           <option value="">Select</option>
-          <option value="tpa_rm">TPA + RSD / RM / TPA with developer ✓</option>
+          <option value="tpa_rm">TPA + RSD / RM / TPA with developer</option>
           <option value="em">EM (not yet created) — not acceptable</option>
           <option value="bt">BT — not acceptable</option>
           <option value="ut_rm">UT for RM — not acceptable</option>
         </Select>
         <Select label="EFTN / PDC account source" id="ri-eftn" value={form.eftn} onChange={set('eftn')}>
           <option value="">Select</option>
-          <option value="local_cb">Local co-borrower / co-applicant ✓</option>
-          <option value="joint">Joint account (NRB + local) ✓</option>
+          <option value="local_cb">Local co-borrower / co-applicant</option>
+          <option value="joint">Joint account (NRB + local)</option>
           <option value="nrb_only">NRB bank account only — not acceptable</option>
         </Select>
       </div>
