@@ -1,0 +1,108 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: var(--green);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+.headerInner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.logo {
+  background: #fff;
+  color: var(--green);
+  font-weight: 800;
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+}
+.brandName { font-size: 15px; font-weight: 600; }
+.brandSub { font-size: 11px; opacity: 0.75; margin-top: 1px; }
+.headerBadge {
+  font-size: 11px;
+  background: rgba(255,255,255,0.15);
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+}
+
+.main { flex: 1; padding: 2rem 0 3rem; }
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  border: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  width: fit-content;
+  margin-bottom: 1.25rem;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+.tab {
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-right: var(--border);
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.tab:last-child { border-right: none; }
+.tab:hover:not(.tabActive) { background: var(--gray-100); }
+.tabActive {
+  background: var(--green);
+  color: #fff;
+  font-weight: 600;
+}
+
+.card {
+  background: #fff;
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.footer {
+  background: var(--gray-100);
+  border-top: var(--border);
+  padding: 14px 0;
+  font-size: 11px;
+  color: var(--gray-400);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .tabs { width: 100%; }
+  .tab { flex: 1; padding: 9px 10px; font-size: 12px; }
+  .card { padding: 1rem; }
+}
