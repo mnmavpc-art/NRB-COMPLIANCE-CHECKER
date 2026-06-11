@@ -75,31 +75,31 @@ export default function RemittanceChecker() {
       <div className={styles.grid2}>
         <Select label="Foreign bank statement" id="r-fbs" value={form.foreignBS} onChange={set('foreignBS')}>
           <option value="">Select</option>
-          <option value="6plus">6–12 months available ✓</option>
+          <option value="6plus">6–12 months available</option>
           <option value="less6">Less than 6 months</option>
           <option value="na">Not available</option>
         </Select>
         <Select label="Local bank statement" id="r-lbs" value={form.localBS} onChange={set('localBS')}>
           <option value="">Select</option>
-          <option value="24plus">24 months available ✓</option>
+          <option value="24plus">24 months available</option>
           <option value="less24">Less than 24 months</option>
           <option value="na">Not available</option>
         </Select>
         <Select label="Remittance slips" id="r-slips" value={form.slips} onChange={set('slips')}>
           <option value="">Select</option>
-          <option value="2yr">2 years with sender/receiver ✓</option>
+          <option value="2yr">2 years with sender/receiver</option>
           <option value="less2">Less than 2 years</option>
           <option value="na">Not available</option>
         </Select>
         <Select label="Passport / Visa / Work permit" id="r-passport" value={form.passport} onChange={set('passport')}>
           <option value="">Select</option>
-          <option value="valid">All valid & collected ✓</option>
+          <option value="valid">All valid & collected</option>
           <option value="partial">Partial</option>
           <option value="na">Not collected</option>
         </Select>
         <Select label="CPV / VOP for local contact" id="r-cpv" value={form.cpv} onChange={set('cpv')}>
           <option value="">Select</option>
-          <option value="done">Confirmed ✓</option>
+          <option value="done">Confirmed</option>
           <option value="pending">Pending</option>
           <option value="na">Not done</option>
         </Select>
