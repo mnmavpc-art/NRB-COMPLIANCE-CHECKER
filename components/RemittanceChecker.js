@@ -39,7 +39,7 @@ export default function RemittanceChecker() {
   return (
     <div>
       <div className={styles.infoBox}>
-        <strong>Remittance income files</strong> — FOIR max 45% · LCR max 60% · Tenor preferably 7 years (max 10) · Income max 75%
+        <strong>Please Input All Fields</strong> — FOIR, LCR, Tenor & Income Consideration % to be Entered
       </div>
 
       <SectionTitle>Borrower & loan details</SectionTitle>
